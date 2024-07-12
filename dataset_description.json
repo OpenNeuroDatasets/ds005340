@@ -12,6 +12,9 @@
     "EthicsApprovals": [
         "Approved by the University of Rochester Subjects Review Board (#1227)"
     ],
-    "DatasetDOI": "TBD",
-    "ReferencesAndLinks": ["TBD"]
+    "DatasetDOI": "doi:10.18112/openneuro.ds005340.v1.0.0",
+    "ReferencesAndLinks": [
+        "TBD"
+    ],
+    "License": "CC0"
 }
