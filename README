@@ -6,18 +6,11 @@ Polonenko MJ & Maddox RK (2024), with citation listed below.
 
 BioRxiv: 
 
-In brief, it contains EEG data for 15 participants who listened to 120 .wav
-files each (10 s each; total ~120 minutes) of broadband peaky speech narrated
-by a male and female with their original f0s (low & high respectively) and f0s
-shifted to the other narrator's f0 and an f0 at the midpoint between the f0s.
-Participants reclined in a dark room and were encouraged to rest. They did not
-have to pay attention to the audio files. For details, see the `Details about
+In brief, it contains EEG data for 15 participants who listened to 30 trials (10 s each; total ~ 15 minutes) of clicks and 120 trials (10 s each; total ~120 minutes) of broadband peaky speech narrated by a male and female with their original f0s (low & high respectively) and f0s
+shifted to the other narrator's f0 and an f0 at the midpoint between the f0s. Click rates matched the speech f0s. Participants reclined in a dark room and were encouraged to rest. They did not have to pay attention to the audio files. For details, see the `Details about
 the experiment` section and refer to our paper.
 
-Code and stimuli to derive the speech responses are provided in the Dataset
-folder and in the Stimuli folders respectively. Code to generate peaky
-speech is openly avaiable on the Polonenko lab's github site:
-https://github.com/polonenkolab.
+Stimuli and regressors to derive the responses are provided in the dataset stimuli folder. Code to derive the responses are openly available on the Polonenko lab's github site: https://github.com/polonenkolab.
 
 Format
 ------
