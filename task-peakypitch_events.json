@@ -24,5 +24,8 @@
     },
     "EEG_trigger_end": {
         "Description": "The trigger values in the EEG annotations for 20 ms before event offset."
+    },
+    "stim_file": {
+        "Description": "The file loaded to play the audio (called 'x' in the hdf5 dictionary)"
     }
 }
