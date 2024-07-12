@@ -1,0 +1,49 @@
+Overview
+--------
+This is the "pitch_shift"" dataset that evaluates the effects of narrator
+and f0 on ABRs to re-synthesized peaky speech for the paper
+Polonenko MJ & Maddox RK (2024), with citation listed below.
+
+In brief, it contains EEG data for 15 participants who listened to 120 .wav
+files each (10 s each; total ~120 minutes) of broadband peaky speech narrated
+by a male and female with their original f0s (low & high respectively) and f0s
+shifted to the other narrator's f0 and an f0 at the midpoint between the f0s.
+Participants reclined in a dark room and were encouraged to rest. They did not
+have to pay attention to the audio files. For details, see the `Details about
+the experiment` section and refer to our paper.
+
+Code and stimuli to derive the speech responses are provided in the Dataset
+folder and in the Stimuli folders respectively. Code to generate peaky
+speech is openly avaiable on the Maddox lab's github site:
+https://github.com/maddoxlab.
+
+Format
+------
+The dataset is formatted according to the EEG Brain Imaging Data Structure.
+See the `dataset_description.json` file for the specific version used.
+Generally, you can find detailed event data in the .tsv files and descriptions
+in the accompanying .json files. Raw eeg files are provided in the Brain
+Products format.
+
+Details about the experiment
+----------------------------
+For a detailed description of the task, see Polonenko & Maddox (2024) and the
+supplied `task-peaky_pitch_eeg.json` file. The 6 peaky speech conditions
+(2 narrators x 3 f0s) were randomly interleaved for each block of trials
+(i.e., for trial 1, the 6 conditions were randomized) and the story token
+was randomized. This means that the participant would not be able to follow
+the story. For clicks the trials were not randomized (already random clicks).
+
+Trigger onset times in the tsv files have already been corrected for the tubing
+delay of the insert earphones (but not in the events of the raw files).
+Triggers with values of "1" were recorded to the onset of the 10 s audio, and
+shortly after triggers with values of "4" or "8" were stamped to indicate the
+overall trial number out of 120 for each speech conditon and out of 30 for each
+click condition. This was done by converting the decimal trial number to bits,
+denoted b, then calculating 2 ** (b + 2). We've specified these trial numbers
+and more metadata of the events in each of the '*_eeg_events.tsv" file, which
+is sufficient to know which trial corresponded to which type of stimulus
+(clicks, male narrator, female narrator), which f0 (low, mid, high), and which
+file - e.g., male000_lowf0.wav for the male narrator with the low f0.
+
+
