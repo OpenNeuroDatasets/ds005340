@@ -1,8 +1,10 @@
 Overview
 --------
-This is the "pitch_shift"" dataset that evaluates the effects of narrator
+This is the "peaky_pitchshift" dataset that evaluates the effects of narrator
 and f0 on ABRs to re-synthesized peaky speech for the paper
 Polonenko MJ & Maddox RK (2024), with citation listed below.
+
+BioRxiv: 
 
 In brief, it contains EEG data for 15 participants who listened to 120 .wav
 files each (10 s each; total ~120 minutes) of broadband peaky speech narrated
@@ -14,8 +16,8 @@ the experiment` section and refer to our paper.
 
 Code and stimuli to derive the speech responses are provided in the Dataset
 folder and in the Stimuli folders respectively. Code to generate peaky
-speech is openly avaiable on the Maddox lab's github site:
-https://github.com/maddoxlab.
+speech is openly avaiable on the Polonenko lab's github site:
+https://github.com/polonenkolab.
 
 Format
 ------
