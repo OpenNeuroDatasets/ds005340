@@ -1,3 +1,5 @@
+1.0.3 2024-11-19
+  - added DOI of published article in JASA-EL
 1.0.2 2024-08-08
   - - removed extra click stimuli that were not used to comply with BIDS format
 1.0.1 2024-07-16
